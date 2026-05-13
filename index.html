@@ -271,6 +271,7 @@
         display: block;
         width: 100%;
         height: auto;
+        border-radius: 18px;
       }
 
       .print-cover-photo {
@@ -281,6 +282,7 @@
         display: block;
         width: 100%;
         height: auto;
+        border-radius: 18px;
       }
 
       .intro-strip {
@@ -391,6 +393,7 @@
         display: block;
         width: 100%;
         height: auto;
+        border-radius: 18px;
       }
 
       .section-title {
@@ -1372,6 +1375,7 @@
           width: 100%;
           height: auto;
           background: transparent;
+          border-radius: 18px;
         }
       }
 
@@ -1483,6 +1487,7 @@
           width: 100%;
           max-height: calc(max(720px, 56.25vw) - 190px);
           object-fit: contain;
+          box-shadow: 0 18px 46px rgba(115, 94, 79, 0.14);
         }
 
         .intro-strip {
@@ -1541,6 +1546,16 @@
           margin: 0 auto;
         }
 
+        main > .menu-band.text-only:last-child {
+          min-height: auto;
+          border-bottom: 0;
+        }
+
+        main > .menu-band.text-only:last-child .content-panel {
+          padding-top: clamp(64px, 6vw, 108px);
+          padding-bottom: clamp(64px, 6vw, 108px);
+        }
+
         .content-panel {
           display: flex;
           flex-direction: column;
@@ -1559,6 +1574,7 @@
         .photo-panel img {
           width: 100%;
           max-height: calc(max(720px, 56.25vw) - 170px);
+          border-radius: 18px;
           object-fit: contain;
         }
 
@@ -1614,10 +1630,11 @@
 
         .footer {
           display: grid;
-          min-height: 42vw;
-          grid-template-columns: 1fr 1.1fr 1fr;
-          align-items: center;
-          padding: clamp(64px, 7vw, 120px);
+          min-height: 0;
+          grid-template-columns: minmax(220px, 0.82fr) minmax(360px, 1.36fr) minmax(220px, 0.82fr);
+          align-items: start;
+          gap: clamp(42px, 6vw, 92px);
+          padding: clamp(54px, 5vw, 90px) clamp(70px, 7vw, 132px) clamp(30px, 3.4vw, 54px);
         }
 
         .footer-center,
@@ -1628,6 +1645,35 @@
 
         .footer-center {
           margin: 0;
+          align-self: center;
+        }
+
+        .footer h2 {
+          font-size: clamp(34px, 3.8vw, 58px);
+          line-height: 0.96;
+        }
+
+        .footer h3 {
+          font-size: 12px;
+          letter-spacing: 0.12em;
+        }
+
+        .footer ul {
+          gap: 10px;
+          margin-top: 18px;
+        }
+
+        .footer li {
+          font-size: 13px;
+        }
+
+        .footer .script {
+          font-size: clamp(16px, 1.35vw, 22px);
+        }
+
+        .footer-bottom {
+          margin-top: clamp(36px, 4vw, 68px);
+          padding-top: 18px;
         }
       }
 
