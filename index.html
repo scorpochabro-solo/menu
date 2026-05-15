@@ -396,6 +396,33 @@
         border-radius: 18px;
       }
 
+      .guide-shot {
+        width: 100%;
+        margin: 18px 0 22px;
+        padding: 8px;
+        background: rgba(178, 177, 173, 0.18);
+        border: 1px solid rgba(117, 111, 98, 0.22);
+        border-radius: 22px;
+        box-shadow: 0 16px 36px rgba(115, 94, 79, 0.1);
+      }
+
+      .guide-shot--before {
+        margin-top: 0;
+      }
+
+      .guide-shot img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+      }
+
+      .guide-shot--portrait {
+        max-width: 360px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
       .section-title {
         max-width: 640px;
         margin-bottom: 34px;
@@ -1578,6 +1605,25 @@
           object-fit: contain;
         }
 
+        .guide-shot {
+          max-width: min(820px, 100%);
+          margin: 22px 0 28px;
+          padding: 10px;
+          border-radius: 24px;
+        }
+
+        .compact-grid .guide-shot {
+          max-width: 100%;
+        }
+
+        .guide-shot--wide {
+          max-width: min(880px, 100%);
+        }
+
+        .guide-shot--portrait {
+          max-width: 360px;
+        }
+
         .section-title {
           max-width: 780px;
           margin-bottom: 30px;
@@ -1931,6 +1977,9 @@
           </div>
           <div class="compact-grid">
             <div class="text-block">
+              <figure class="guide-shot guide-shot--before">
+                <img src="./assets/images/guide/1.jpeg" alt="Пример выбора продукта в Fat Secret" width="1280" height="960" loading="lazy" decoding="async" />
+              </figure>
               <p>Если не знаете, какой продукт выбрать, например купили гороховый суп, знаете, что его 300 мл, но не уверены насчет калорийности, выбирайте тот, который калорийнее, если вы сушитесь, и менее калорийный, если вы в наборе.</p>
             </div>
             <div class="text-block">
@@ -1977,6 +2026,9 @@
                   <li>На окне поиска вкладки «еда» вводим нужный продукт и нажимаем «поиск».</li>
                   <li>Из списка выбираем искомый продукт, отмечаем галочкой, подтверждаем и сохраняем.</li>
                 </ul>
+                <figure class="guide-shot">
+                  <img src="./assets/images/guide/2.jpeg" alt="Выбор продукта из списка в Fat Secret" width="1280" height="960" loading="lazy" decoding="async" />
+                </figure>
               </div>
             </article>
           </div>
@@ -2006,6 +2058,9 @@
                   <li>Нажимаем «Сохранить».</li>
                   <li>Примечание: эти действия возможны, если штрих-код продукта занесен в базу приложения Fat Secret.</li>
                 </ul>
+                <figure class="guide-shot guide-shot--wide">
+                  <img src="./assets/images/guide/3.jpeg" alt="Добавление продукта по штрихкоду в Fat Secret" width="1280" height="704" loading="lazy" decoding="async" />
+                </figure>
               </div>
             </article>
 
@@ -2017,6 +2072,9 @@
                   <span class="dots" aria-hidden="true"></span>
                 </div>
                 <p>Для удаления еды из дневника зажимаем строчку и проводим пальцем справа налево. Смахивающим движением избавляемся от ненужной записи.</p>
+                <figure class="guide-shot guide-shot--portrait">
+                  <img src="./assets/images/guide/4.jpeg" alt="Удаление еды из дневника Fat Secret" width="720" height="1280" loading="lazy" decoding="async" />
+                </figure>
               </div>
             </article>
 
@@ -2032,6 +2090,9 @@
                   <li>Откроется окно редактирования.</li>
                   <li>В окне меняем на нужное значение и нажимаем «Сохранить».</li>
                 </ul>
+                <figure class="guide-shot">
+                  <img src="./assets/images/guide/5.jpeg" alt="Редактирование веса продукта в Fat Secret" width="1280" height="960" loading="lazy" decoding="async" />
+                </figure>
               </div>
             </article>
           </div>
@@ -2100,6 +2161,9 @@
                   <li>Выбираем порции или граммы и нажимаем «Сохранить».</li>
                   <li>Готово.</li>
                 </ul>
+                <figure class="guide-shot guide-shot--wide">
+                  <img src="./assets/images/guide/6.jpeg" alt="Сохранение домашнего блюда в Fat Secret" width="1280" height="704" loading="lazy" decoding="async" />
+                </figure>
               </div>
             </article>
           </div>
