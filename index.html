@@ -1852,6 +1852,42 @@
         }
       }
 
+      /* Overflow fixes after palette overrides */
+      h1,
+      h2 {
+        max-width: 100%;
+        overflow-wrap: break-word;
+        hyphens: auto;
+      }
+
+      @media screen and (max-width: 1023px) {
+        h2 {
+          font-size: clamp(27px, 7.6vw, 38px);
+          line-height: 1.08;
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+        .hero-grid {
+          grid-template-columns: minmax(0, 1.08fr) minmax(400px, 0.92fr);
+        }
+
+        .hero-copy {
+          position: relative;
+          z-index: 1;
+        }
+
+        .hero-photo {
+          background: transparent;
+        }
+
+        h1 {
+          max-width: 900px;
+          font-size: clamp(60px, 5.35vw, 98px);
+          line-height: 0.98;
+        }
+      }
+
       @media print {
         .print-cover {
           padding-left: 26px;
