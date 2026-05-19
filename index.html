@@ -1934,6 +1934,33 @@
         border-color: rgba(255, 255, 255, 0.78);
       }
 
+      .intro-strip .thin-stats {
+        border-color: rgba(255, 255, 255, 0.86);
+      }
+
+      .thin-stats div {
+        border-color: rgba(255, 255, 255, 0.86);
+      }
+
+      @media screen and (max-width: 1023px) {
+        .intro-strip .thin-stats {
+          border-top-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .thin-stats div {
+          border-right-color: rgba(255, 255, 255, 0.86);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.86);
+        }
+
+        .thin-stats div:nth-child(2n) {
+          border-right: 0;
+        }
+
+        .thin-stats div:nth-last-child(-n + 2) {
+          border-bottom: 0;
+        }
+      }
+
       @media print {
         .print-cover {
           padding-left: 26px;
