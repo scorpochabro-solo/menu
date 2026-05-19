@@ -103,6 +103,10 @@
         font-family: "Stapel-Bd", "Gotham Pro", Arial, sans-serif;
       }
 
+      .phone-title-line {
+        display: inline;
+      }
+
       .topbar {
         position: sticky;
         top: 0;
@@ -1861,6 +1865,10 @@
       }
 
       @media screen and (max-width: 1023px) {
+        .phone-title-line {
+          display: block;
+        }
+
         h2 {
           font-size: clamp(27px, 7.6vw, 38px);
           line-height: 1.08;
@@ -2028,7 +2036,7 @@
         <div class="hero-grid">
           <div class="hero-copy">
             <div class="eyebrow">Fat Secret guide</div>
-            <h1 id="page-title">Что и как записывать</h1>
+            <h1 id="page-title">Что и как <span class="phone-title-line">записывать</span></h1>
             <p class="subtitle">Чек-лист по подсчету калорий, взвешиванию продуктов и ведению дневника питания.</p>
             <div class="hero-meta" aria-label="Краткая информация">
               <div>
